@@ -1,18 +1,17 @@
 server:
   port: 9999
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:shubhamsadare/ConfigRepo.git
-          default-label: main
-          clone-on-start: true
-        bootstrap: true
-      enabled: true
-   
-  application:
-    name: Config-Server
 config:
-  user: User Hello Dev from config server
-  role: -role is Development from config
+  user: User Hello Dev from cloud config server
+  role: -role is Development from cloud server
+charge:
+  authority:
+    - read
+    - write
+
+management.endpoints.web.exposure.include: "*"   
+spring.cloud.config.uri: https://github.com/shubhamsadare/ConfigRepo.git
+
+#Disable security of the Management endpoint
+management:
+  security:
+    enabled: false
