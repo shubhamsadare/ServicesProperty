@@ -1,9 +1,0 @@
-config:
-  user: User Hello Dev from config server
-  role: -role is Development from config server
-charge:
-  authority:
-    - read
-    - write
-db: 
-  pass: dev123
