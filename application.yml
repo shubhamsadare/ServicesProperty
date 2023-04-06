@@ -1,6 +1,0 @@
-config:
-  user: User Hello normal
-  role: -role is Development
-db:
-  user: abcd
-  pass: dev123
