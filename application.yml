@@ -1,6 +1,6 @@
 config:
-  user: User Hello Dev from cloud config server
-  role: -role is Development from cloud server
+  user: User Hello shubham from cloud config server
+  role: -role is Admin from cloud server
 charge:
   authority:
     - read
